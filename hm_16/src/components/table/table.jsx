@@ -5,7 +5,12 @@ function Table(props) {
         <table>
             <tbody>
                 {props.data.map((element) => {
-                    return <tr><p>{element.txt}</p> <p>{element.rate}</p> <p>{element.cc}</p> <p>{element.exchangedate}</p></tr>      
+                    return <tr>
+                        <td>{element.txt}</td> 
+                        <td>{element.rate}</td> 
+                        <td>{element.cc}</td> 
+                        <td>{element.exchangedate}</td> 
+                    </tr>      
                 })}
             </tbody>
         </table>
